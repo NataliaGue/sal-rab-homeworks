@@ -7,14 +7,12 @@ function calcShipping(sum, min, shipping) {
     let shippingSum;
     if (productsSum == 0) {
         shippingSum = 0;
-    }
-    if (productsSum  >= freeShippingMinSum) {
+    } else if (productsSum  >= freeShippingMinSum) {
         shippingSum = 0;
-    }
-    if (productsSum > 0 && productsSum < freeShippingMinSum) {
+    } else {
         shippingSum = shippingPrice;
     }
-
+    
     return shippingSum;
 }
 
