@@ -10,6 +10,7 @@ function calcShipping(sum, min, shipping) {
       }  else {
         shippingSum = shippingPrice;
     }
+    // Конец решения задания №2.1.
     
     return shippingSum;
 }
